@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements albumAdapter.albu
         mDbHelper = new AlbumsDbHelper(this);
 
         //read saved preference & get Albums from database
-        String prefString = sp.getString("sorting_list", "Date added");
+        String prefString = sp.getString("sorting_list", "id");
         assert prefString != null;
         if (prefString.equals("year")) loadAlbums(mDbHelper.listAlbumsYear());
         if (prefString.equals("id")) loadAlbums(mDbHelper.listAlbums());
