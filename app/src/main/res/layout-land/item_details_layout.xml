@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="169dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/albumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/coverImage"
+        android:layout_toRightOf="@+id/coverImage"
+        android:text="TEST ALBUM 1"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/albumArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/albumTitle"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/coverImage"
+        android:layout_toRightOf="@+id/coverImage"
+        android:text="TEST ARTIST 1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/releaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/albumArtist"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/coverImage"
+        android:layout_toRightOf="@+id/coverImage"
+        android:text="RELEASE YEAR: 2020"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/releaseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/releaseYear"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/coverImage"
+        android:layout_toRightOf="@+id/coverImage"
+        android:text="RELEASE TYPE: CASSETTE"
+        android:textSize="26sp" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="sorting_array">
+        <item>Date added</item>
+        <item>Artist</item>
+        <item>Alphabetical</item>
+        <item>Year of release</item>
+        <item>Type</item>
+    </string-array>
+    <string-array name="sorting_array_values">
+        <item>id</item>
+        <item>artist</item>
+        <item>album</item>
+        <item>year</item>
+        <item>type</item>
+    </string-array>
+</resources>
